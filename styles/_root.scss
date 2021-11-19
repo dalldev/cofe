@@ -1,0 +1,59 @@
+:root {
+  --orange: #ff9f1c;
+
+  --brown-100: #5b3924;
+  --brown-75: #9e6730;
+  --brown-50: #eec170;
+  --brown-25: #f2d2b3;
+  --brown-00: #f2eadc;
+
+  font-size: clamp(18px, max(2.2vw), 30px);
+}
+
+html {
+  box-sizing: border-box;
+
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+
+  background-color: var(--orange);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1rem;
+  font-family: sans-serif;
+
+  &::-webkit-scrollbar {
+    width: 14px;
+
+    background-color: var(--brown-100);
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    background-color: var(--brown-50);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: 1rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
